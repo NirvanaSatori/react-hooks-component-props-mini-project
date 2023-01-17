@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-function Article({title, date, preview}) {
-  return (
-    <article key={title} >
-        <h3>{title}</h3>
-        <small placeholder= "January 1, 1970">{date}</small>
-        <p>{preview}</p>
-    </article>
-  )
-}
+function About({
+    image="https://via.placeholder.com/215", 
+    about
+}){
+    return(
+        <aside>
+            <img src={image} alt="blog logo"></img>
+            <p>{about}</p>
+        </aside>
+    )
+};
 
-export default Article
+export default About

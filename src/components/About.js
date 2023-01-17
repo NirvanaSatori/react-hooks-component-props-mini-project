@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
 
-function About({image, about}) {
-  return (
-    <aside>
-        <img src={image} placeholder="https://via.placeholder.com/215" alt="blog logo">
-        </img>
-        <p>{about}</p>
-    </aside>
-  )
+function Article({
+    title, 
+    date= "January 1, 1970",
+    preview}){
+    return(
+        <article>
+            <h3>{title}</h3>
+            <small>{date}</small>
+            <p>{preview}</p>
+
+        </article>
+    )
 }
 
-export default About
+
+export default Article
